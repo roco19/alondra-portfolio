@@ -1,0 +1,17 @@
+Create a minimal, clean, and creative landing page wireframe for an artist portfolio. 
+The layout should feel elegant and modern, with plenty of white space and simple visual hierarchy. 
+
+Requirements:
+- The page must be responsive, adapting to different devices (desktop, tablet, mobile). 
+- Include both light and dark mode themes. Add a toggle button in the header to switch between themes. By default, the theme should follow the device’s system preference.
+
+Sections to include:
+- Header with artist name/logo on the left and simple navigation links on the right (Home, Portfolio, About, Contact). Include the light/dark theme toggle button here. 
+- Hero section: large centered text with the artist's name and a short tagline. Optionally include a placeholder for a background image or artwork. 
+- Portfolio gallery section: grid layout to showcase artworks (paintings, sketches, sculptures), with space for thumbnails that can expand or link to details. 
+- About section: short text block with artist’s photo placeholder and biography. 
+- Testimonials or press section: minimal cards with quotes or logos of publications/exhibitions. 
+- Contact section: simple form (name, email, message) and/or links to social media. 
+- Footer: copyright and minimalist links.
+
+Overall style: minimalist, creative, plenty of negative space, typography-focused, subtle artistic touches without clutter.
