@@ -2,7 +2,7 @@
   "name": "portfolio-artist",
   "version": "1.0.0",
   "description": "Artist Portfolio Website",
-  "homepage": "https://github.com/roco19/alondra-portfolio",
+  "homepage": "https://roco19.github.io/alondra-portfolio",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
     "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css",
