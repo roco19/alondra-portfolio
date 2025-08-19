@@ -1,31 +1,17 @@
-# Prompts folder
-prompts/
-prompts/*
-
 # Dependencies
 node_modules/
-package-lock.json
 
-# Build output
+# Build outputs
 dist/
 build/
 *.log
+src/css/output.css
 
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Editor directories and files
+# IDE and Editor files
+.vscode/
 .idea/
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.swp
+*.swo
 
 # OS generated files
 .DS_Store
@@ -35,3 +21,18 @@ build/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Project specific
+prompts/
