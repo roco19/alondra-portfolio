@@ -18,12 +18,12 @@ const imageCount = 6;
 // Load gallery images
 for (let i = 1; i <= imageCount; i++) {
     const figure = document.createElement('figure');
-    figure.className = 'gallery__item overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-105';
+    figure.className = 'gallery__item overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-105 bg-white dark:bg-gray-800';
     
     const img = document.createElement('img');
     img.src = `assets/images/image_${i}.jpeg`;
     img.alt = `Artwork ${i}`;
-    img.className = 'w-full h-64 object-cover';
+    img.className = 'w-full h-64 object-cover transition-opacity hover:opacity-90';
     img.loading = 'lazy'; // Enable lazy loading for better performance
     
     figure.appendChild(img);
@@ -41,4 +41,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
+});
+
+// Theme toggle functionality
+function initTheme() {
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const html = document.documentElement;
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Set initial theme
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        html.classList.remove('light');
+        html.classList.add('dark');
+    }
+
+    // Toggle theme
+    themeToggleBtn.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        html.classList.toggle('light');
+        
+        // Save preference
+        const isDark = html.classList.contains('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+}
+
+// Initialize theme and mobile menu
+document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
 });

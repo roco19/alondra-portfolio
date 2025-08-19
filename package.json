@@ -4,6 +4,7 @@
   "description": "Artist Portfolio Website",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css",
     "serve": "live-server --host=localhost --port=3000 --entry-file=index.html src",
     "start": "npm-run-all --parallel dev serve"
   },
