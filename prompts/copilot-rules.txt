@@ -3,7 +3,7 @@
 ## Guiding Principles
 - **Clarity and Simplicity:** Prioritize code that is easy to read and understand. Avoid overly complex or "clever" solutions.
 - **Performance First:** All generated code must be optimized for fast loading times. This includes using efficient selectors, optimizing images, and lazy loading non-critical assets.
-- **Mobile-First Responsive Design:** All styles must be written with a mobile-first approach. Start with base styles for small screens and use `min-width` media queries to add complexity for larger screens.
+- **Responsive Design:** All pages must use a responsive layout that adapts to desktop, tablet, and mobile.
 
 ## HTML Rules
 1.  **Semantic HTML:** Always use semantic HTML5 tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`, etc.). Do not use `<div>` or `<span>` when a more specific semantic tag is appropriate.
